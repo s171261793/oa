@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>jsPlumb 1.5.4 demo - yui</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />                
+       
+        <link rel="stylesheet" href="demo-all.css">     
+        <link rel="stylesheet" href="demo.css">
+		 <script type="text/javascript" src="simpleyui-min.js"></script>
+           <!-- JS -->
+        <!-- support lib for bezier stuff -->
+        <script src="lib/jsBezier-0.6.js"></script>     
+        <!-- jsplumb geom functions -->   
+        <script src="lib/jsplumb-geom-0.1.js"></script>
+        <!-- jsplumb util -->
+        <script src="src/util.js"></script>
+        <!-- base DOM adapter -->
+        <script src="src/dom-adapter.js"></script>        
+        <!-- main jsplumb engine -->
+        <script src="src/jsPlumb.js"></script>
+        <!-- endpoint -->
+        <script src="src/endpoint.js"></script>                
+        <!-- connection -->
+        <script src="src/connection.js"></script>
+        <!-- anchors -->
+        <script src="src/anchors.js"></script>        
+        <!-- connectors, endpoint and overlays  -->
+        <script src="src/defaults.js"></script>
+        <!-- bezier connectors -->
+        <script src="src/connectors-bezier.js"></script>
+        <!-- state machine connectors -->
+        <script src="src/connectors-statemachine.js"></script>
+        <!-- flowchart connectors -->
+        <script src="src/connectors-flowchart.js"></script>
+        <script src="src/connector-editors.js"></script>
+        <!-- SVG renderer -->
+        <script src="src/renderers-svg.js"></script>
+        <!-- canvas renderer -->
+        <script src="src/renderers-canvas.js"></script>
+        <!-- vml renderer -->
+        <script src="src/renderers-vml.js"></script>
+        
+        <!-- yui jsPlumb adapter -->
+        <script src="src/yui.jsPlumb.js"></script>
+        <!-- /JS -->  
+		<script type="text/javascript">
+		jsPlumb.ready(function() {
+			var instance = jsPlumb.getInstance({
+			// 默认拖动选项
+			DragOptions : { cursor: 'pointer', zIndex:2000 },
+			// 在覆盖装饰与每个连接。注意，该标签重叠使用一个函数来生成标签文字，在这种
+			// 情况下，它返回'LabelText的'成员，我们在'初始化'下面的方法在每个连接上设置。
+			ConnectionOverlays : [
+				[ "Arrow", { location:1 } ],
+				[ "Label", { 
+					location:0.1,
+					id:"label",
+					cssClass:"aLabel"
+				}]
+			],
+			Container:"flowchart-demo"
+		});		
+
+		// 这是油漆样式连接线..
+		var connectorPaintStyle = {
+			lineWidth:4,
+			strokeStyle:"#61B7CF",
+			joinstyle:"round",
+			outlineColor:"white",
+			outlineWidth:2
+		},
+		// ..这就是hover样式。
+		connectorHoverStyle = {
+			lineWidth:4,
+			strokeStyle:"#216477",
+			outlineWidth:2,
+			outlineColor:"white"
+		},
+		endpointHoverStyle = {
+			fillStyle:"#216477",
+			strokeStyle:"#216477"
+		},
+		// 源端点（小蓝的）的定义
+		sourceEndpoint = {
+			endpoint:"Dot",
+			paintStyle:{ 
+				strokeStyle:"#7AB02C",
+				fillStyle:"transparent",
+				radius:1,
+				lineWidth:1 
+			},				
+			isSource:true,
+			connector:[ "Flowchart", { stub:[10, 40], gap:10, cornerRadius:5, alwaysRespectStubs:true } ],								                
+			connectorStyle:connectorPaintStyle,
+			hoverPaintStyle:endpointHoverStyle,
+			connectorHoverStyle:connectorHoverStyle,
+            dragOptions:{},
+            overlays:[
+            	[ "Label", { 
+                	location:[0.5, 1.5], 
+                	label:"",
+                	cssClass:"endpointSourceLabel" 
+                } ]
+            ]
+		},		
+		// 目标端点的定义（当用户拖动一个连接会出现） 
+		targetEndpoint = {
+			endpoint:"Dot",					
+			paintStyle:{ fillStyle:"#7AB02C",radius:1 },
+			hoverPaintStyle:endpointHoverStyle,
+			maxConnections:-1,
+			dropOptions:{ hoverClass:"hover", activeClass:"active" },
+			isTarget:true,			
+            overlays:[
+            	[ "Label", { location:[0.5, -0.5], label:"", cssClass:"endpointTargetLabel" } ]
+            ]
+		},			
+		init = function(connection) {			
+			connection.getOverlay("label").setLabel(connection.sourceId.substring(15) + "-" + connection.targetId.substring(15));
+			connection.bind("editCompleted", function(o) {
+				if (typeof console != "undefined")
+					console.log("connection edited. path is now ", o.path);
+			});
+		};			
+
+		var _addEndpoints = function(toId, sourceAnchors, targetAnchors) {
+				for (var i = 0; i < sourceAnchors.length; i++) {
+					var sourceUUID = toId + sourceAnchors[i];
+					instance.addEndpoint("flowchart" + toId, sourceEndpoint, { anchor:sourceAnchors[i], uuid:sourceUUID });						
+				}
+				for (var j = 0; j < targetAnchors.length; j++) {
+					var targetUUID = toId + targetAnchors[j];
+					instance.addEndpoint("flowchart" + toId, targetEndpoint, { anchor:targetAnchors[j], uuid:targetUUID });						
+				}
+			};
+
+		// 暂停绘画和初始化。
+		instance.doWhileSuspended(function() {
+
+			_addEndpoints("Window4", ["TopCenter", "BottomCenter"], ["LeftMiddle", "RightMiddle"]);			
+			_addEndpoints("Window2", ["LeftMiddle", "BottomCenter"], ["TopCenter", "RightMiddle"]);
+			_addEndpoints("Window3", ["RightMiddle", "BottomCenter"], ["LeftMiddle", "TopCenter"]);
+			_addEndpoints("Window1", ["LeftMiddle", "RightMiddle"], ["TopCenter", "BottomCenter"]);
+						
+			// 监听新的连接，初始化他们，我们在初始化启动时的连接方式相同。
+			instance.bind("connection", function(connInfo, originalEvent) { 
+				init(connInfo.connection);
+			});			
+						
+			// 使所有的窗口可拖动的div						
+			instance.draggable(jsPlumb.getSelector(".flowchart-demo .window"), { grid: [20, 20] });		
+
+			// 连接数了
+			instance.connect({uuids:["Window2BottomCenter", "Window3TopCenter"], editable:true});
+			instance.connect({uuids:["Window2LeftMiddle", "Window4LeftMiddle"], editable:true});
+			instance.connect({uuids:["Window4TopCenter", "Window4RightMiddle"], editable:true});
+			instance.connect({uuids:["Window3RightMiddle", "Window2RightMiddle"], editable:true});
+			instance.connect({uuids:["Window4BottomCenter", "Window1TopCenter"], editable:true});
+			instance.connect({uuids:["Window3BottomCenter", "Window1BottomCenter"], editable:true});
+			//
+			
+			
+		});
+		
+	});
+		</script>
+    </head>
+    <body>
+
+            <div class="demo flowchart-demo" id="flowchart-demo">
+                <div class="window" id="flowchartWindow1"><strong>1</strong><br/><br/></div>
+                <div class="window" id="flowchartWindow2"><strong>2</strong><br/><br/></div>
+                <div class="window" id="flowchartWindow3"><strong>3</strong><br/><br/></div>
+                <div class="window" id="flowchartWindow4"><strong>4</strong><br/><br/></div> 
+            </div>          
+            
+          
+        
+    </body>
+</html>

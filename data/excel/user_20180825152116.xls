@@ -1,0 +1,103 @@
+    <html xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns="http://www.w3.org/TR/html4/loose.dtd">
+    <head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <!--[if gte mso 9]><xml>
+     <o:DocumentProperties>
+      <o:LastAuthor>Rising</o:LastAuthor>
+      <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+      <o:Version>10.2625</o:Version>
+     </o:DocumentProperties>
+     <o:OfficeDocumentSettings>
+      <o:DownloadComponents/>
+     </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+    <style>
+    <!--table
+     {mso-displayed-decimal-separator:"\.";
+     mso-displayed-thousand-separator:"\,";}
+    @page
+     {margin:1.0in .75in 1.0in .75in;
+     mso-header-margin:.5in;
+     mso-footer-margin:.5in;}
+    tr
+     {mso-height-source:auto;}
+    col
+     {mso-width-source:auto;}
+    br
+     {mso-data-placement:same-cell;}
+    .style0
+     {mso-number-format:General;
+     text-align:general;
+     vertical-align:bottom;
+     white-space:nowrap;
+     mso-rotate:0;
+     mso-background-source:auto;
+     mso-pattern:auto;
+     color:windowtext;
+     font-size:10.0pt;
+     font-weight:400;
+     font-style:normal;
+     text-decoration:none;
+     font-family:Arial;
+     mso-generic-font-family:auto;
+     mso-font-charset:0;
+     border:none;
+     mso-protection:locked visible;
+     mso-style-name:Normal;
+     mso-style-id:0;}
+    td
+     {mso-style-parent:style0;
+     padding-top:1px;
+     padding-right:1px;
+     padding-left:1px;
+     mso-ignore:padding;
+     color:windowtext;
+     font-size:10.0pt;
+     font-weight:400;
+     font-style:normal;
+     text-decoration:none;
+     font-family:Arial;
+     mso-generic-font-family:auto;
+     mso-font-charset:0;
+     mso-number-format:General;
+     text-align:general;
+     vertical-align:bottom;
+     border:none;
+     mso-background-source:auto;
+     mso-pattern:auto;
+     mso-protection:locked visible;
+     white-space:nowrap;
+     mso-rotate:0;}
+    .xl24
+     {mso-style-parent:style0;
+     white-space:normal;}
+    -->
+    </style>
+    <!--[if gte mso 9]><xml>
+     <x:ExcelWorkbook>
+      <x:ExcelWorksheets>
+       <x:ExcelWorksheet>
+     <x:Name>Sheet1</x:Name>
+     <x:WorksheetOptions>
+      <x:Selected/>
+      <x:ProtectContents>False</x:ProtectContents>
+      <x:ProtectObjects>False</x:ProtectObjects>
+      <x:ProtectScenarios>False</x:ProtectScenarios>
+     </x:WorksheetOptions>
+       </x:ExcelWorksheet>
+      </x:ExcelWorksheets>
+      
+      <x:WindowHeight>10005</x:WindowHeight>
+      <x:WindowWidth>10005</x:WindowWidth>
+      <x:WindowTopX>120</x:WindowTopX>
+      <x:WindowTopY>135</x:WindowTopY>
+      <x:ProtectStructure>False</x:ProtectStructure>
+      <x:ProtectWindows>False</x:ProtectWindows>
+     </x:ExcelWorkbook>
+    </xml><![endif]-->
+    </head>
+    <body link=blue vlink=purple>
+    <table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 x:num>用户名</td><td class=xl24 width=64 x:num>权限组</td><td class=xl24 width=64 x:num>员工编号</td><td class=xl24 width=64 x:num>入职时间</td><td class=xl24 width=64 x:num>姓名</td><td class=xl24 width=64 x:num>岗位</td><td class=xl24 width=64 x:num>所属部门</td></tr><tr><td class=xl24 width=64 x:num>admin</td><td class=xl24 width=64 x:num>超级管理员组</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>管理员</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>技术研发中心</td></tr><tr><td class=xl24 width=64 x:num>guorui</td><td class=xl24 width=64 x:num>超级管理员组</td><td class=xl24 width=64 x:num>1801001</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>郭睿</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>保密管理办公室</td></tr><tr><td class=xl24 width=64 x:num>zhankaiming</td><td class=xl24 width=64 x:num>超级管理员组</td><td class=xl24 width=64 x:num>1709037</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>战凯鸣</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>保密管理办公室</td></tr><tr><td class=xl24 width=64 x:num>yanchaoyue</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1505006</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>闫朝月</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>质量管理部</td></tr><tr><td class=xl24 width=64 x:num>yuxianxian</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1507012</td><td class=xl24 width=64 x:num>2015,07,23</td><td class=xl24 width=64 x:num>余贤贤</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>保密管理办公室</td></tr><tr><td class=xl24 width=64 x:num>gongqingsheng</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1604019</td><td class=xl24 width=64 x:num>2014,04,21</td><td class=xl24 width=64 x:num>龚清生</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>fpga组</td></tr><tr><td class=xl24 width=64 x:num>lichaopeng</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1607025</td><td class=xl24 width=64 x:num>2016,07,30</td><td class=xl24 width=64 x:num>李超鹏</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>fpga组</td></tr><tr><td class=xl24 width=64 x:num>shiyanping</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1703034</td><td class=xl24 width=64 x:num>2018,08,28</td><td class=xl24 width=64 x:num>石燕萍</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>zhangzili</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1703035</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>张自立</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>人事财务部</td></tr><tr><td class=xl24 width=64 x:num>tanghongbo</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1708036</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>唐红波</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>软件与算法组</td></tr><tr><td class=xl24 width=64 x:num>tianjingquan</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1711038</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>田景全</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>结构组</td></tr><tr><td class=xl24 width=64 x:num>zhangyuan</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1801039</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>张元</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>软件与算法组</td></tr><tr><td class=xl24 width=64 x:num>wangxinjiang</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1803040</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>王新江</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>技术研发中心</td></tr><tr><td class=xl24 width=64 x:num>jinyingxin</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1803041</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>金迎新</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>技术研发中心</td></tr><tr><td class=xl24 width=64 x:num>liyutang</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1806042</td><td class=xl24 width=64 x:num>2018,08,10</td><td class=xl24 width=64 x:num>李玉堂</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>换能器组</td></tr><tr><td class=xl24 width=64 x:num>kangchunchun</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1806043</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>康春春</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>软件与算法组</td></tr><tr><td class=xl24 width=64 x:num>xiaoshuang</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1806044</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>肖爽</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>换能器组</td></tr><tr><td class=xl24 width=64 x:num>liuhaijun</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1806045</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>柳海军</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>sunshenyong</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1807046</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>孙申勇</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>软件与算法组</td></tr><tr><td class=xl24 width=64 x:num>tongbingshan</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1807047</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>童炳善</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>menglingfeng</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1807048</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>孟令峰</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>caoqingsheng</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1807049</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>曹卿胜</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>质量管理部</td></tr><tr><td class=xl24 width=64 x:num>wanglimei</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1808050</td><td class=xl24 width=64 x:num>0000,00,00</td><td class=xl24 width=64 x:num>王丽梅</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>技术研发中心</td></tr><tr><td class=xl24 width=64 x:num>wuwenguang</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1808051</td><td class=xl24 width=64 x:num>2018,08,15</td><td class=xl24 width=64 x:num>武文广</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>结构组</td></tr>

@@ -1,0 +1,83 @@
+body {
+	text-align: center;
+	background-color: #dcdcdc;
+}
+.divtable{
+	border-collapse: 1px;
+    border-spacing: 1px;
+	background-color:#E5E5E5;
+	margin:auto;
+	width:1002px;
+}
+.divtable td{
+	background-color: #FFFFFF;
+	height:35px;
+	line-height:35px;
+	vertical-align:middle;
+}
+.text_table{
+	background-color: #FFFFFF;
+	
+}
+.table_bg{
+	border-collapse: 1px;
+    border-spacing: 1px;
+	background-color:#DDDED5;
+}
+.table_bg1{
+	border-collapse: 0px;
+    border-spacing: 0px;
+	border-left:1px solid #DDDED5;
+	border-right:1px solid #DDDED5;
+}
+.title{
+	font-family: "微软雅黑", "宋体";
+	font-size: 32px;
+	color: #069DD5;
+	line-height: 60px;
+	letter-spacing: 2px;
+}
+.text_td {
+	font-family: Arial, "微软雅黑", "宋体";
+	font-size: 14px;
+	line-height: 35px;
+	height:35px;
+	color: #68584e;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.text_td_1 {
+	width:110px;
+	background-color:#F7F8EE;
+}
+.text_value {
+	font-family: Arial, "微软雅黑", "宋体";
+	font-size: 14px;
+	line-height: 25px;
+	height:35px;
+	color: #069DD5;
+	padding-right: 6px;
+	padding-left: 6px;
+	background-color:#FFFFFF;
+	text-align:left;
+}
+.text_title {
+	font-family: Arial, "微软雅黑", "宋体";
+	font-size: 16px;
+	line-height: 25px;
+	height:40px;
+	color: #68584e;
+	padding-left: 20px;
+	background-color:#E8E8E3;
+	text-align:left;
+}
+.text_no {
+	font-family: Arial, "微软雅黑", "宋体";
+	font-size: 16px;
+	line-height: 25px;
+	height:35px;
+	color: #68584e;
+	padding-right: 6px;
+	padding-left: 6px;
+	background-color:#F7F8EE;
+}

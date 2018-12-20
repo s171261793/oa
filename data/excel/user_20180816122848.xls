@@ -1,0 +1,103 @@
+    <html xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns="http://www.w3.org/TR/html4/loose.dtd">
+    <head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Excel.Sheet>
+    <!--[if gte mso 9]><xml>
+     <o:DocumentProperties>
+      <o:LastAuthor>Rising</o:LastAuthor>
+      <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+      <o:Version>10.2625</o:Version>
+     </o:DocumentProperties>
+     <o:OfficeDocumentSettings>
+      <o:DownloadComponents/>
+     </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+    <style>
+    <!--table
+     {mso-displayed-decimal-separator:"\.";
+     mso-displayed-thousand-separator:"\,";}
+    @page
+     {margin:1.0in .75in 1.0in .75in;
+     mso-header-margin:.5in;
+     mso-footer-margin:.5in;}
+    tr
+     {mso-height-source:auto;}
+    col
+     {mso-width-source:auto;}
+    br
+     {mso-data-placement:same-cell;}
+    .style0
+     {mso-number-format:General;
+     text-align:general;
+     vertical-align:bottom;
+     white-space:nowrap;
+     mso-rotate:0;
+     mso-background-source:auto;
+     mso-pattern:auto;
+     color:windowtext;
+     font-size:10.0pt;
+     font-weight:400;
+     font-style:normal;
+     text-decoration:none;
+     font-family:Arial;
+     mso-generic-font-family:auto;
+     mso-font-charset:0;
+     border:none;
+     mso-protection:locked visible;
+     mso-style-name:Normal;
+     mso-style-id:0;}
+    td
+     {mso-style-parent:style0;
+     padding-top:1px;
+     padding-right:1px;
+     padding-left:1px;
+     mso-ignore:padding;
+     color:windowtext;
+     font-size:10.0pt;
+     font-weight:400;
+     font-style:normal;
+     text-decoration:none;
+     font-family:Arial;
+     mso-generic-font-family:auto;
+     mso-font-charset:0;
+     mso-number-format:General;
+     text-align:general;
+     vertical-align:bottom;
+     border:none;
+     mso-background-source:auto;
+     mso-pattern:auto;
+     mso-protection:locked visible;
+     white-space:nowrap;
+     mso-rotate:0;}
+    .xl24
+     {mso-style-parent:style0;
+     white-space:normal;}
+    -->
+    </style>
+    <!--[if gte mso 9]><xml>
+     <x:ExcelWorkbook>
+      <x:ExcelWorksheets>
+       <x:ExcelWorksheet>
+     <x:Name>Sheet1</x:Name>
+     <x:WorksheetOptions>
+      <x:Selected/>
+      <x:ProtectContents>False</x:ProtectContents>
+      <x:ProtectObjects>False</x:ProtectObjects>
+      <x:ProtectScenarios>False</x:ProtectScenarios>
+     </x:WorksheetOptions>
+       </x:ExcelWorksheet>
+      </x:ExcelWorksheets>
+      
+      <x:WindowHeight>10005</x:WindowHeight>
+      <x:WindowWidth>10005</x:WindowWidth>
+      <x:WindowTopX>120</x:WindowTopX>
+      <x:WindowTopY>135</x:WindowTopY>
+      <x:ProtectStructure>False</x:ProtectStructure>
+      <x:ProtectWindows>False</x:ProtectWindows>
+     </x:ExcelWorkbook>
+    </xml><![endif]-->
+    </head>
+    <body link=blue vlink=purple>
+    <table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 x:num>用户名</td><td class=xl24 width=64 x:num>权限组</td><td class=xl24 width=64 x:num>员工编号</td><td class=xl24 width=64 x:num>入职时间</td><td class=xl24 width=64 x:num>姓名</td><td class=xl24 width=64 x:num>岗位</td><td class=xl24 width=64 x:num>状态</td><td class=xl24 width=64 x:num>所属部门</td></tr><tr><td class=xl24 width=64 x:num>admin</td><td class=xl24 width=64 x:num>系统管理员组</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>2018,06,13</td><td class=xl24 width=64 x:num>管理员</td><td class=xl24 width=64 x:num></td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>guo1</td><td class=xl24 width=64 x:num>超级管理员组</td><td class=xl24 width=64 x:num>1806001</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>郭1</td><td class=xl24 width=64 x:num>总经理</td><td class=xl24 width=64 x:num>保密管理办公室</td></tr><tr><td class=xl24 width=64 x:num>wang2</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1806002</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>王2</td><td class=xl24 width=64 x:num>总工程师</td><td class=xl24 width=64 x:num>技术研发中心</td></tr><tr><td class=xl24 width=64 x:num>jin3</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1806003</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>金3</td><td class=xl24 width=64 x:num>首席科学家</td><td class=xl24 width=64 x:num>技术研发中心</td></tr><tr><td class=xl24 width=64 x:num>yu4</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1806004</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>余4</td><td class=xl24 width=64 x:num>保密办主任</td><td class=xl24 width=64 x:num>保密管理办公室</td></tr><tr><td class=xl24 width=64 x:num>yan5</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1806005</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>闫5</td><td class=xl24 width=64 x:num>专职保密员</td><td class=xl24 width=64 x:num>保密管理办公室</td></tr><tr><td class=xl24 width=64 x:num>gong6</td><td class=xl24 width=64 x:num>管理员组</td><td class=xl24 width=64 x:num>1806006</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>龚6</td><td class=xl24 width=64 x:num>硬件组组长</td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>li7</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>1806007</td><td class=xl24 width=64 x:num>2018,06,10</td><td class=xl24 width=64 x:num>李7</td><td class=xl24 width=64 x:num>硬件工程师</td><td class=xl24 width=64 x:num>硬件组</td></tr><tr><td class=xl24 width=64 x:num>kele</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>WQS123456</td><td class=xl24 width=64 x:num>2018,07,03</td><td class=xl24 width=64 x:num>可乐</td><td class=xl24 width=64 x:num>软件与算法组组长</td><td class=xl24 width=64 x:num>软件与算法组</td></tr><tr><td class=xl24 width=64 x:num>dajialai</td><td class=xl24 width=64 x:num>用户组</td><td class=xl24 width=64 x:num>SSSWE2213</td><td class=xl24 width=64 x:num>2018,07,19</td><td class=xl24 width=64 x:num>大家来</td><td class=xl24 width=64 x:num>软件与算法组组长</td><td class=xl24 width=64 x:num>硬件组</td></tr>
